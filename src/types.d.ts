@@ -5,7 +5,11 @@ export interface IMovies {
 
 export interface IMovie {
     id: number;
-    image: string;
+    image: IImage;
     name: string;
     status: string;
+}
+
+export interface IImage {
+    medium: string;
 }
