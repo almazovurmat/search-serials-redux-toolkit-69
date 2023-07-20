@@ -23,7 +23,7 @@ const MovieDetails = () => {
                         <p><b>Language: </b> {movie.language}</p>
                         <p><b>Status: </b> {movie.status}</p>
                         <p><b>Genre: </b> {movie.genres.join(', ')}</p>
-                        <p><b>Url: </b> <a target="_blank" href={movie.url}>More info</a></p>
+                        <p><b>Url: </b> <a target="_blank" rel="noopener noreferrer" href={movie.url}>More info</a></p>
                         <p><b>Type: </b> {movie.type}</p>
                         <p><b>Runtime: </b> {movie.runtime} min</p>
 
