@@ -5,19 +5,14 @@ import {IMovie, IMovies} from "../types";
 interface IMovieState {
     movies: IMovies[];
     loader: boolean;
-    movie: IMovie;
+    movie: IMovie|null;
     inputValue: string;
 }
 
 const initialState:IMovieState = {
     movies: [],
     loader: false,
-    movie: {
-        id: 0,
-        image: {medium: ''},
-        name: '',
-        status: '',
-    },
+    movie: null,
     inputValue: '',
 }
 
@@ -42,6 +37,7 @@ export const MovieSlice = createSlice({
         });
         builder.addCase(fetchMovies.fulfilled, (state, action) => {
             state.loader = false;
+            console.log(action.payload);
             state.movies = action.payload;
         });
         builder.addCase(fetchMovies.rejected, (state) => {

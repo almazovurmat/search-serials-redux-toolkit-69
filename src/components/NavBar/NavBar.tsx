@@ -24,9 +24,9 @@ const NavBar = () => {
     };
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+            <nav className="navbar navbar-expand-lg navbar-dark d-flex justify-content-between">
                 <div className="container">
-                    <Link className="navbar-brand" to={'/'}>Get Serial Info</Link>
+                    <Link className="navbar-brand" to={'/'}>Search for TV Show</Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#search" aria-controls="search"
                             aria-expanded="false"

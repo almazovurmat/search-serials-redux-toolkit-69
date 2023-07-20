@@ -8,7 +8,7 @@ import MovieDetails from "./container/MovieDetails/MovieDetails";
 function App() {
     return (
         <>
-            <div className="container-fluid">
+            <div className="container-fluid bg-primary">
                 <NavBar/>
             </div>
             <div className="container">
